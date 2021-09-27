@@ -10,7 +10,7 @@ const int OutPin =  6; // the number of the LED pin
 const long interval = 1000;           // interval at which to blink (milliseconds)
 
 //  When using PWM, this sets the brightness or speed.
-int intensity = 255;  // 0 for "off", 255 for "maximum"
+int intensity = 55;  // 0 for "off", 255 for "maximum"
 
 // Variables will change:
 int State = LOW;             // ledState used to set the LED
@@ -31,10 +31,10 @@ void loop() {
 
   // USE THIS FIRST
   // set the LED with the ledState of the variable:
-  digitalWrite(OutPin, State);
+  //digitalWrite(OutPin, State);
 
   //USE THIS SECOND, to do PWM;  comment out the digitalWrite above, and uncomment this.
-  //analogWrite(OutPin,intensity);
+  analogWrite(OutPin,intensity);
 
   delay(interval);
   

@@ -8,7 +8,7 @@
 #include <Adafruit_ADS1X15.h>   // the library for the A/D card
 
 // Things you will need to change.
-float V_DAC = 5;
+float V_DAC = 0.9;
 float V_fullscale = 5.16;  // Measure your +5V supply and enter the value here!
 
 // You may need to change this if you don't have 100Ohm resistors.

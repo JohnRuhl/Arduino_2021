@@ -9,7 +9,7 @@
 
 // These are things you adjust to make your thermometer work well, and to calibrate it.
 // We print the quantity (T_room + gain*(V_diode - Voffset)).
-float Voffset = 0.6; // Volts offset, so we can see fluctuations better on serial plotter.
+float Voffset = 0.72; // Volts offset, so we can see fluctuations better on serial plotter.
 float gain = 500;   //  delta_K/delta_V for your diode
 float T_room = 300; //  Kelvin
 
